@@ -1013,8 +1013,7 @@ InfoBubble.prototype.close = function() {
   if (this.bubble_) {
     this.bubble_.style['display'] = 'none';
     // Remove the animation so we next time it opens it will animate again
-    this.bubble_.className =
-        this.bubble_.className.replace(this.animationName_, '');
+    this.bubble_.className = this.bubble_.className.replace(this.animationName_, '');
   }
 
   if (this.bubbleShadow_) {
@@ -1066,8 +1065,10 @@ InfoBubble.prototype.open_ = function(opt_map, opt_anchor) {
 
   if (animation) {
     // Add the animation
-    this.bubble_.className += ' ' + this.animationName_;
-    this.bubbleShadow_.className += ' ' + this.animationName_;
+    window.setTimeout(function() {
+      this.bubble_.className += ' ' + this.animationName_;
+      this.bubbleShadow_.className += ' ' + this.animationName_;
+    }, 400);
   }
 
   this.redraw_();

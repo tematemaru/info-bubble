@@ -1,6 +1,6 @@
 {
-  "name": "js-info-bubble",
-  "version": "0.8.0",
+  "name": "info-bubble",
+  "version": "0.0.1",
   "description": "A library to create customizable CSS3-based InfoWindows",
   "main": "src/infobubble.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/googlemaps/js-info-bubble.git"
+    "url": "git+https://github.com/ArtemDervoed/info-bubble.git"
   },
   "keywords": [
     "google",
@@ -25,7 +25,10 @@
   "author": "Google Inc.",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/googlemaps/js-info-bubble/issues"
+    "url": "https://github.com/ArtemDervoed/info-bubble/issues"
   },
-  "homepage": "https://github.com/googlemaps/js-info-bubble#readme"
+  "homepage": "https://github.com/ArtemDervoed/info-bubble#readme",
+  "dependencies": {
+    "user": "0.0.0"
+  }
 }
